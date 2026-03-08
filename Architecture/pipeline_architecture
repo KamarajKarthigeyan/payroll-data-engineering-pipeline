@@ -1,0 +1,16 @@
+Raw payroll data stored in S3 is processed through AWS Glue ETL and stored as Optimized parquet files for analytical queries.
+
+Technologies Used:
+•	AWS S3
+•	AWS Glue
+•	PySpark
+•	Parquet format
+•	Amazon Athena
+
+ETL Process:
+The ETL job performs the following steps:
+1. Read payroll CSV dataset from S3
+2. Cleans column names
+3. Casts numeric columns to correct data types
+4. Filters invalid salary rows
+5. Writes processed data in Parquet format
